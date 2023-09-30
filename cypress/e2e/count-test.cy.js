@@ -6,7 +6,8 @@ describe('First spec file to test', () => {
     it('check the app contains the sentence', () => {
       cy.get('[data-cy=app-heading]').should("contain", 'Vite + React + Cypress');
     })
-  
+   
+    
     it('test the button increment', () => {
       cy.get('[data-cy=app-button]').click(); 
       cy.get('[data-cy=app-button]').contains("count is 1");
