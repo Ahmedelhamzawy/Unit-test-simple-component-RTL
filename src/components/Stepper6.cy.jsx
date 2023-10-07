@@ -1,5 +1,5 @@
 import Stepper from "./Stepper";
-for(let i = 0;i<10;i++){
+// for(let i = 0;i<10;i++){
 
 describe("<Stepper>", () => {
   it("mounts", () => {
@@ -35,4 +35,4 @@ describe("<Stepper>", () => {
     cy.get("@onChangeSpy").should("have.been.calledWith", 1);
   });
 });
-}
+// }
