@@ -1,6 +1,7 @@
 import {render,screen} from '@testing-library/react';
 import userEvent from "@testing-library/user-event";
 import Stepper from '../Stepper';
+for(let i = 0;i<10;i++){
 describe("<Stepper>", () => {
 it('should render todo component',()=>{
     render(<Stepper/>);
@@ -41,3 +42,4 @@ it("clicking + fires a change event with the incremented value", () => {
     expect(onChangeSpy).toHaveBeenCalledTimes(1);
 });
 });
+}
